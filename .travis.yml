@@ -1,0 +1,12 @@
+language: go
+
+services: 
+  - docker
+
+before_install:
+ - docker pull vasppipoka/go_ninja:1.9
+
+script:
+ - docker run -t -p 8000:8000 vasppipoka/go_ninja:1.9
+
+

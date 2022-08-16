@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  ninja:
+    image: vasppipoka/go_ninja:1.9
+    container_name: Ninja_GO
+    restart: always
+    ports:
+      - "8000:8000"
+    tty: true
