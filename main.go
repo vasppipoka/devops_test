@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-    var listen_port string = ":" + getEnv("LISTEN_PORT", "8081")
+    var listen_port string = ":" + getEnv("LISTEN_PORT", "8000")
     router := mux.NewRouter()
     router.HandleFunc("/healthcheck", HealthCheck).Methods("GET")
     log.Fatal(http.ListenAndServe(listen_port, router))
