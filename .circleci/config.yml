@@ -17,7 +17,7 @@ jobs:
             go mod init app
             go mod tidy
             go build -o main .
-            ./main
+            ./main &
       - run:
           name: Final
           command: |
