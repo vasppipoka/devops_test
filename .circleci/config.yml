@@ -18,9 +18,7 @@ jobs:
             go mod tidy
             go build -o main .
             ./main &
-      - run:
-          name: Final
-          command: |
             curl -i http://127.0.0.1:8000/healthcheck
+
             
            
