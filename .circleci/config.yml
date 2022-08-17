@@ -10,7 +10,7 @@ jobs:
             mkdir /go-ninja
             git clone "https://github.com/vasppipoka/devops_test /go-ninja
             chmod 777 /go-ninja
-       - run:
+      - run:
           name: build go-ninja
           command: |
             cd /go-ninja
