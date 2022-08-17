@@ -24,7 +24,7 @@ jobs:
       - image: golang:1.19.0-bullseye
     steps:
       - checkout 
-      -run: 
+      - run: 
           name: Testing Code
           command: |
             go test ./... -v 
