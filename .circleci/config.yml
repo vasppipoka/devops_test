@@ -23,10 +23,16 @@ jobs:
     docker:
       - image: golang:1.19.0-bullseye
     steps:
-      - checkout 
+      - run:
+          name: Clone Repo
+          command: | 
+            mkdir /go-ninja
+            git clone https://github.com/vasppipoka/devops_test /go-ninja
+            chmod 777 /go-ninja
       - run: 
           name: Testing Code
           command: |
+            cd /go-ninja
             go test ./... -v 
 
 workflows:
