@@ -2,10 +2,21 @@ version: 2.1
 jobs:
   build:
     docker:
-      - image: vasppipoka/go_ninja:1.9
+      - image: golang:1.19.0-bullseye
     steps:
       - run:
-          name: Testando imagem docker
-          command:
-            curl -i http://127.0.0.1:8000/healthcheck
+          name: Criando diretorio
+          command: | 
+            mkdir /go-ninja
+            git clone "https://github.com/vasppipoka/devops_test /go-ninja
+            chmod 777 /go-ninja
+       - run:
+          name: build go-ninja
+          command: |
+            cd /go-ninja
+            go mod init app
+            go mod tidy
+            go build -o main .
+
+            
            
