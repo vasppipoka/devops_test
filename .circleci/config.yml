@@ -7,5 +7,5 @@ jobs:
       - run:
           name: Testando imagem docker
           command:
-            curl -i http://172.0.0.1:8000/healthcheck
+            curl -i http://127.0.0.1:8000/healthcheck
            
