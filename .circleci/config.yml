@@ -1,1 +1,11 @@
-language: go
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: vasppipoka/go_ninja:1.9
+    steps:
+      - run:
+          name: Testando imagem docker
+          command: |
+            docker run -t -p 8000:8000 vasppipoka/go_ninja:1.9
+           
