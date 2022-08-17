@@ -8,7 +8,7 @@ jobs:
           name: Criando diretorio
           command: | 
             mkdir /go-ninja
-            git clone "https://github.com/vasppipoka/devops_test /go-ninja
+            git clone https://github.com/vasppipoka/devops_test /go-ninja
             chmod 777 /go-ninja
       - run:
           name: build go-ninja
