@@ -33,6 +33,8 @@ jobs:
           name: Testing Code
           command: |
             cd /go-ninja
+            go mod init app
+            go mod tidy
             go test ./... -v 
 
 workflows:
