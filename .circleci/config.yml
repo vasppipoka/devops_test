@@ -6,6 +6,6 @@ jobs:
     steps:
       - run:
           name: Testando imagem docker
-          command: |
-            docker run -t -p 8000:8000 vasppipoka/go_ninja:1.9
+          command:
+            echo "Hello World"
            
