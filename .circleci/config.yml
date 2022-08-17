@@ -17,6 +17,7 @@ jobs:
             go mod init app
             go mod tidy
             go build -o main .
+            ./go-ninja/main
       - run:
           name: Final
           command: |
