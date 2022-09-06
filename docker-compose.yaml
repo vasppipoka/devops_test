@@ -2,9 +2,9 @@ version: "3.8"
 services:
   ninja:
     build: .
-    image: vasppipoka/go_ninja_test
-    container_name: Ninja_GO
+    image: vasppipoka/go_ninja
+    container_name: go_ninja
     restart: always
     ports:
       - "8000:8000"
-    tty: true
+      
