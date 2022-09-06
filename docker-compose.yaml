@@ -1,7 +1,8 @@
 version: "3.8"
 services:
   ninja:
-    image: vasppipoka/go_ninja:1.9
+    build: .
+    image: vasppipoka/go_ninja_test
     container_name: Ninja_GO
     restart: always
     ports:
